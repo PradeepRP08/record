@@ -115,25 +115,35 @@ The app will be available at: **http://localhost:5173**
 | POST   | /api/auth/login  | Login user          | Public  |
 | GET    | /api/auth/me     | Get current user    | Private |
 
-## Features
+## Features & Recent Updates
 
-- ✅ Email + Password authentication (no social login)
-- ✅ bcrypt password hashing
-- ✅ JWT token-based authentication
+### Architecture & Security
+- ✅ Email + Password authentication loop
+- ✅ bcrypt password hashing & JWT token-based session management
 - ✅ Protected routes (Dashboard requires login)
-- ✅ Email format validation (frontend + backend)
-- ✅ Toast notifications for all actions
-- ✅ Static dashboard UI matching reference design
-- ✅ Responsive design (mobile + desktop)
-- ✅ Sidebar navigation
-- ✅ Profile cards with skill tags
-- ✅ Search filters UI
+- ✅ MongoDB Atlas cloud connection using Mongoose ODM
+
+### Frontend Interface & UX Polish
+- ✅ High-contrast "Quantum" dark theme with a standardized typographic scale
+- ✅ Pixel-perfect Dashboard UI engine syncing search filters with a dynamic profile card grid
+- ✅ Compact, non-overflowing skill badges and responsive navigation sidebar
+- ✅ Interactive visual status indicators (Availability statuses, Verified Badges, Match Percentage)
+- ✅ Seamless skeleton loading states mitigating layout shifts during data retrieval
+- ✅ React Hot Toast notifications for all system events
+
+### Admin & Data Features
+- ✅ Real-time NotificationService tracking dynamic changes (e.g., inventory status) directly in the header
+- ✅ Optimized chart visualizations with high-contrast text and exact data count points
+
+### Testing & Reliability
+- ✅ **Frontend:** Automated UI testing suite using Vitest + React Testing Library bridging components & auth flows
+- ✅ **Backend:** Robust endpoint & middleware testing framework using Jest + Supertest
 
 ## Pages
 
 1. **Login** (`/login`) - Sign in with email and password
 2. **Signup** (`/signup`) - Create account with name, email, password
-3. **Dashboard** (`/dashboard`) - Static profile search dashboard (protected)
+3. **Dashboard** (`/dashboard`) - Profile search dashboard with interactive components (protected path)
 
 ## License
 
