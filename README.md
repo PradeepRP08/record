@@ -145,6 +145,13 @@ The app will be available at: **http://localhost:5173**
 2. **Signup** (`/signup`) - Create account with name, email, password
 3. **Dashboard** (`/dashboard`) - Profile search dashboard with interactive components (protected path)
 
+## OUTPUT :
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+
+
 ## License
 
 © 2024 Record Innovation and Enterprises Pvt. Ltd.
